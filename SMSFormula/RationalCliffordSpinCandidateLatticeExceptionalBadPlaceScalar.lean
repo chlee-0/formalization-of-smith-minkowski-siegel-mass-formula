@@ -1,0 +1,125 @@
+import SMSFormula.RationalCliffordSpinCandidateIntegralComapVolume
+import SMSFormula.RationalCliffordSpinCandidateLocalPointMapRestriction
+import SMSFormula.RationalCliffordSpinCandidatePlacewiseFiniteSheetHaar
+import SMSFormula.RationalCliffordSpinCandidateFiniteAdelicMixedPrincipalBlockCylinderMeasure
+import Mathlib.MeasureTheory.Constructions.Pi
+import SMSFormula.RationalCliffordSpinCandidateFiniteAdelicDifferentialScale
+import SMSFormula.RationalSpecialOrthogonalFiniteAdelicMixedPrincipalBlockSplit
+import SMSFormula.RationalCliffordSpinCandidateFiniteAdelicGenuineBlockCoherence
+import SMSFormula.RationalSpecialOrthogonalFiniteAdelicGenuinePrincipalBlockCarrier
+import SMSFormula.RationalSpecialOrthogonalFiniteAdelicMixedPrincipalBlockCylinderMeasure
+import SMSFormula.RationalCliffordSpinCandidateLatticeGoodIntegralPointMapPushforward
+import SMSFormula.RationalCliffordSpinCandidateFiniteAdelicDirectedMeasure
+import SMSFormula.RationalCliffordSpinCandidateRawDifferentialVolumeProductPrecursor
+import SMSFormula.RationalCliffordSpinCandidateAdelicProduct
+import SMSFormula.RationalSpecialOrthogonalFullAdelicDifferentialMeasure
+import SMSFormula.RationalCliffordSpinCandidateLatticeRefinedPieceRestrictedPushforward
+import SMSFormula.SpecialOrthogonalFullAdelicDifferentialMeasurableWeilQuotient
+import SMSFormula.RationalCliffordGeneralSpinLatticeFiniteSpinClassHorizontalConcrete
+import Mathlib.Probability.ProductMeasure
+import SMSFormula.RationalCliffordGeneralSpinLatticeIntegralSpinorRange
+import SMSFormula.RationalCliffordSpinCandidateAlmostEverywhereIntegralLifting
+import SMSFormula.RationalSquareClassFiniteLocalizationSurjectivity
+import Mathlib.GroupTheory.GroupAction.CardCommute
+import Mathlib.Data.Rat.Cast.Order
+import Mathlib.Data.Nat.Cast.Field
+import Mathlib.Algebra.BigOperators.Field
+import Mathlib.Data.ENNReal.BigOperators
+import Mathlib.Data.ENNReal.Real
+import Mathlib.Tactic.FieldSimp
+import SMSFormula.PadicSpecialOrthogonalDifferentialFiniteAdelicStabilizerCarrier
+import SMSFormula.SpecialOrthogonalFiniteAdelicDifferentialSelectorMass
+import SMSFormula.AdelicLeftCosets
+import SMSFormula.RationalCliffordGeneralSpinLatticeFiniteAdelicSOSurjectivity
+import SMSFormula.RationalCliffordGeneralSpinAdelicProduct
+import SMSFormula.RationalCliffordGeneralSpinVerticalEquivalence
+import SMSFormula.RationalCliffordGeneralSpinAdelicSpecialOrthogonalQuotient
+import SMSFormula.RationalCliffordSpinCandidateLatticeProperDomainSelectorSourceMap
+import SMSFormula.SpecialOrthogonalFullAdelicProperPieceDifferentialMeasure
+import Mathlib.MeasureTheory.Measure.Haar.Unique
+import SMSFormula.RationalCliffordGeneralSpinVerticalSpecialOrthogonalProjection
+import SMSFormula.RationalCliffordSpinCandidateKernelMuTwo
+import SMSFormula.RationalCliffordSpinCandidateAdelicLeftQuotientTopology
+import SMSFormula.RationalCliffordSpinCandidateIntegralSpinorNormUnitValued
+import SMSFormula.RationalCliffordSpinCandidatePlacewiseSpinorNormContinuity
+import SMSFormula.RationalSpecialOrthogonalFiniteAdelicRestrictedFamilyCarrier
+import SMSFormula.RationalCliffordSpinCandidateFiniteAdelicRestrictedFamilyGroup
+import SMSFormula.RationalSpecialOrthogonalAdelicSpinorNormDiagonal
+import SMSFormula.RationalSpecialOrthogonalTamagawa
+import SMSFormula.RationalAdeleAdditiveMeasure
+import SMSFormula.RationalCliffordSpinCandidateTopologicalGroup
+import SMSFormula.RationalCliffordSpinCandidateOnoRelativeTamagawaData
+import SMSFormula.RationalCliffordSpinCandidateCanonicalRightQuotient
+import SMSFormula.RationalCliffordSpinCandidateLatticeRealSurjectivity
+import Mathlib.MeasureTheory.Measure.WithDensity
+import SMSFormula.RationalCliffordSpinCandidateLatticeRawBlockScaleComparison
+
+/-!
+# Cancel the nonbad exceptional Spin volumes against the common block scalar
+
+The exceptional selector mass has been split into a finite lifting-bad comap
+product and ordinary chart-glued integral volumes elsewhere.  The coherent
+Spin block weight contains the reciprocal ordinary volumes away from the
+fixed coordinate-presentation bad set.  This file performs their exact finite
+cancellation.
+
+The residue keeps precisely three literal contributions: every lifting-bad
+comap mass, reciprocal integral volumes at lifting-bad places outside the
+fixed coordinate bad set, and integral volumes at fixed coordinate bad places
+outside the lifting-bad set.  No factor at a lifting-bad place is evaluated.
+-/
+
+noncomputable section
+
+open MeasureTheory
+open scoped ENNReal
+
+namespace RationalQuadraticSpaceMatrix
+
+variable {n : ℕ} (V : RationalQuadraticSpaceMatrix n)
+
+local instance exceptionalBadPlaceScalarHeightOneDecidableEq :
+    DecidableEq (IsDedekindDomain.HeightOneSpectrum ℤ) :=
+  Classical.decEq _
+
+/-- Normalizing the complete comparison bad set adds no further admissible
+exceptional places, because it already contains the fixed coordinate bad
+set. -/
+theorem cliffordSpinCandidateAdmissibleExceptionalPlaces_comparisonBadPlaces_eq :
+    V.cliffordSpinCandidateAdmissibleExceptionalPlaces
+        V.cliffordSpinCandidateIntegralVolumeComparisonBadPlaces =
+      V.cliffordSpinCandidateIntegralVolumeComparisonBadPlaces := by
+  ext v
+  simp [cliffordSpinCandidateAdmissibleExceptionalPlaces,
+    cliffordSpinCandidateIntegralVolumeComparisonBadPlaces]
+  aesop
+
+/-- Every integral-lifting bad place belongs to the complete comparison bad
+set. -/
+theorem cliffordSpinCandidateIntegralLiftingBadPlaces_subset_comparisonBadPlaces :
+    V.cliffordSpinCandidateIntegralLiftingBadPlaces ⊆
+      V.cliffordSpinCandidateIntegralVolumeComparisonBadPlaces := by
+  intro v hv
+  simp [cliffordSpinCandidateIntegralVolumeComparisonBadPlaces, hv]
+
+end RationalQuadraticSpaceMatrix
+
+namespace PositiveDefiniteIntegralLattice
+
+variable {n : ℕ}
+
+set_option synthInstance.maxHeartbeats 500000
+set_option maxHeartbeats 1800000
+
+local instance exceptionalBadPlaceScalarHeightOneDecidableEq :
+    DecidableEq (IsDedekindDomain.HeightOneSpectrum ℤ) :=
+  Classical.decEq _
+
+local instance exceptionalBadPlaceScalarPrimeFact
+    (v : IsDedekindDomain.HeightOneSpectrum ℤ) :
+    Fact (Nat.Prime (Rat.HeightOneSpectrum.primesEquiv v).1) :=
+  ⟨(Rat.HeightOneSpectrum.primesEquiv v).2⟩
+
+end PositiveDefiniteIntegralLattice
+
+end

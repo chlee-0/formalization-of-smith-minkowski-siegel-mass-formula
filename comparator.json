@@ -1,0 +1,15 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "SMSFormula.Challenge.genusMass_A1",
+    "SMSFormula.Challenge.genusMass_A2",
+    "SMSFormula.Challenge.genusMass_ternary",
+    "SMSFormula.Challenge.genusMass_A4",
+    "SMSFormula.Challenge.genusMass_E8",
+    "SMSFormula.Challenge.mass_typeI",
+    "SMSFormula.Challenge.mass_typeII"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+  "enable_nanoda": false
+}
