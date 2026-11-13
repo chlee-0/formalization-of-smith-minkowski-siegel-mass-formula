@@ -1,6 +1,8 @@
 import SMSFormula.AdelicGaussianSpinTamagawaEisensteinComparison
 import SMSFormula.RationalQuadraticIsometrySpinCandidateRepresentedNormCoefficient
 import SMSFormula.RationalCliffordGeneralSpinAllRationalShellTonelli
+import Mathlib.RingTheory.Etale.Weakly
+import Mathlib.RingTheory.Flat.TorsionFree
 
 /-!
 # Every anisotropic complement carries an integral lattice

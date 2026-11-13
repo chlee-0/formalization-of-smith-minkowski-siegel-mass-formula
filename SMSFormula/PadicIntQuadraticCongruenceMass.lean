@@ -1,4 +1,8 @@
-import Mathlib
+import Mathlib.Algebra.Lie.OfAssociative
+import Mathlib.Algebra.Order.Field.Power
+import Mathlib.Algebra.Order.Star.Basic
+import Mathlib.MeasureTheory.Group.Measure
+import Mathlib.NumberTheory.Padics.RingHoms
 
 /-! Congruence masses on `ℤ_p^N`. Reduction modulo `p^k` coordinatewise,
 `ρ : ℤ_p^N → (ℤ/p^kℤ)^N`, is a surjective additive map whose fibers are the closed

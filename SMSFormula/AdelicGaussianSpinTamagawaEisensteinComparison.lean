@@ -8,6 +8,8 @@ import SMSFormula.RationalWeakApproximation
 import SMSFormula.RationalPadicHighRankIsotropy
 import SMSFormula.RationalDyadicHighRankIsotropy
 import SMSFormula.RationalAdeleStandardThetaShellGap
+import Mathlib.RingTheory.Henselian
+import Mathlib.RingTheory.RegularLocalRing.Defs
 
 /-!
 # `τ(Spin_V) = 1` from the shell identities and the Eisenstein aggregates

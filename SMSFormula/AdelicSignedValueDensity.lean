@@ -1,6 +1,11 @@
 import SMSFormula.ValueDensityTracePositivity
 import SMSFormula.AdelicGeneratorL1
 import SMSFormula.PolarGaussianQuadraticIdentification
+import Mathlib.Algebra.AffineMonoid.Basic
+import Mathlib.NumberTheory.NumberField.Completion.FinitePlace
+import Mathlib.RingTheory.TotallySplit
+import Mathlib.Topology.Connected.Separation
+import Mathlib.Topology.MetricSpace.Ultra.TotallySeparated
 
 /-!
 # Signed value densities on the admissible Gaussian core

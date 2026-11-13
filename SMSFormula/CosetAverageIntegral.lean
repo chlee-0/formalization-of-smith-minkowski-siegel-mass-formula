@@ -1,4 +1,7 @@
 import SMSFormula.FiniteConductorSummability
+import Mathlib.Analysis.InnerProductSpace.Basic
+import Mathlib.MeasureTheory.Integral.Bochner.Set
+import Mathlib.Order.CompletePartialOrder
 
 /-!
 # A locally constant integral is the normalized finite sum

@@ -1,3 +1,4 @@
+import Mathlib.NumberTheory.LSeries.HurwitzZetaValues
 import SMSFormula.Applications.Unimodular.Constants
 import SMSFormula.Applications.Unimodular.ChiMinusFour
 import SMSFormula.Applications.Unimodular.GoodPrimes

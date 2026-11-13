@@ -1,4 +1,7 @@
-import Mathlib
+import Mathlib.Analysis.Normed.Ring.Lemmas
+import Mathlib.GroupTheory.Index
+import Mathlib.MeasureTheory.Measure.NullMeasurable
+import Mathlib.Order.CompletePartialOrder
 
 /-! Partition of an orbit into translates of a normal subgroup orbit. For a group
 `Γ` acting on `X`, a normal subgroup `N` and a point `x₀`, put

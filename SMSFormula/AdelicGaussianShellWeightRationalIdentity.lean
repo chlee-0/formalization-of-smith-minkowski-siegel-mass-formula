@@ -1,5 +1,6 @@
 import SMSFormula.QuadraticOrbitDeterminantElementary
 import SMSFormula.AdelicGaussianRationalShellFactorProductFormula
+import Mathlib.Data.Rat.Star
 
 /-!
 # The rational shell identity `r · q_a = ± det E`

@@ -1,4 +1,9 @@
-import Mathlib
+import Mathlib.Algebra.Field.ZMod
+import Mathlib.Algebra.Lie.OfAssociative
+import Mathlib.AlgebraicTopology.SimplexCategory.Basic
+import Mathlib.GroupTheory.GroupAction.Ring
+import Mathlib.LinearAlgebra.Matrix.InvariantBasisNumber
+import Mathlib.LinearAlgebra.Matrix.Symmetric
 import SMSFormula.StandardAxiomsGuard
 
 /-!

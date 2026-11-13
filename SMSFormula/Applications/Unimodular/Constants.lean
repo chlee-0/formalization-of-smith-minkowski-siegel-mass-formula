@@ -1,4 +1,10 @@
-import Mathlib
+import Mathlib.Algebra.Order.Ring.Star
+import Mathlib.Analysis.RCLike.Basic
+import Mathlib.Data.Rat.Star
+import Mathlib.NumberTheory.Bernoulli
+import Mathlib.Tactic.NormNum.BigOperators
+import Mathlib.Tactic.NormNum.NatFactorial
+import Mathlib.Tactic.NormNum.Parity
 
 /-!
 # Rational constants for unimodular mass applications

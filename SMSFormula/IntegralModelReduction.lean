@@ -1,4 +1,5 @@
 import SMSFormula.MatrixReductionPhase
+import Mathlib.Algebra.Ring.IsFormallyReal
 
 /-!
 # The integral model, recognized on the lattice's own Gram matrix

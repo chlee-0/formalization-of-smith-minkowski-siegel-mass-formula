@@ -1,5 +1,6 @@
 import SMSFormula.AdelicGaussianRankFourDualShell
 import SMSFormula.AdelicGaussianRankFourLatticeAggregate
+import Mathlib.Topology.UniformSpace.Uniformizable
 
 /-!
 # The dual-side aggregate of the rank-four shell densities and the aggregate identity `hE`

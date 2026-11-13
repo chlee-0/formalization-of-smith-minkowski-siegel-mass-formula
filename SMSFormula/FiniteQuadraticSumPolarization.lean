@@ -1,4 +1,5 @@
-import Mathlib
+import Mathlib.LinearAlgebra.Matrix.Symmetric
+import Mathlib.Tactic.LinearCombination
 
 /-!
 # The squaring step of the quadratic-sum bound: polarization, and where `H = 2B` comes from

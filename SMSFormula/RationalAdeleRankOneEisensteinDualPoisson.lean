@@ -5,6 +5,7 @@ import SMSFormula.AdelicGaussianDualCarrierCore
 import SMSFormula.RationalAdeleDualTestGeometricCovariance
 import SMSFormula.RationalAdeleRankOneEisensteinSiegelWeyl
 import SMSFormula.RationalAdeleRealCuspGaussianFactorization
+import Mathlib.Data.Rat.Star
 
 /-!
 # Rank-one adelic Poisson summation for the DUAL-carrier test

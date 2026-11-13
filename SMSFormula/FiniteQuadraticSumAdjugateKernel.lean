@@ -1,4 +1,4 @@
-import Mathlib
+import Mathlib.LinearAlgebra.Matrix.Adjugate
 
 /-!
 # The adjugate kernel bound

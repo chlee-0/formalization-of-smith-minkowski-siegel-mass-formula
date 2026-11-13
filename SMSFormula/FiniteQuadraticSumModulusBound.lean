@@ -1,6 +1,8 @@
 import SMSFormula.FiniteQuadraticSumOrthogonality
 import SMSFormula.FiniteQuadraticSumKernelCount
+import Mathlib.Analysis.CStarAlgebra.Classes
 import Mathlib.Analysis.RCLike.Basic
+import Mathlib.RingTheory.SimpleRing.Principal
 
 /-!
 # The modulus bound of the finite quadratic-sum estimate, assembled

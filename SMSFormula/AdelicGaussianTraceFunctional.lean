@@ -1,5 +1,6 @@
 import SMSFormula.AdelicGaussianTracePositivity
 import Mathlib.LinearAlgebra.Isomorphisms
+import Mathlib.Algebra.Module.Submodule.Order
 
 /-!
 # The value-density functional on the actual restriction image

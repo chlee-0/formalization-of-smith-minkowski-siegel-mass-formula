@@ -1,3 +1,8 @@
+import Mathlib.Algebra.Lie.OfAssociative
+import Mathlib.Algebra.Order.Ring.Star
+import Mathlib.Data.Int.ConditionallyCompleteOrder
+import Mathlib.Data.Int.Star
+import Mathlib.GroupTheory.SpecificGroups.Cyclic
 import SMSFormula.FiniteQuadraticSumAdjugateKernel
 
 /-!

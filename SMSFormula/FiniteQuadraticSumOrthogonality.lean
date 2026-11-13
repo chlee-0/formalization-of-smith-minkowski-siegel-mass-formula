@@ -1,3 +1,5 @@
+import Mathlib.Algebra.Group.AddChar
+import Mathlib.Data.ZMod.Defs
 import SMSFormula.FiniteQuadraticSumPolarization
 
 /-!
